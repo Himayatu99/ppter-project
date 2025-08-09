@@ -4,11 +4,7 @@
   "description": "Automated software testing with Pupperter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Himayatu99/pptr-project.git"
+    "test": "mocha --timeout=30000 ./tests"
   },
   "keywords": [
     "Puppeteer",
@@ -17,9 +13,10 @@
     "Automation"
   ],
   "author": "Himayat",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Himayatu99/pptr-project/issues"
-  },
-  "homepage": "https://github.com/Himayatu99/pptr-project#readme"
+  "dependencies": {
+    "chai": "^5.2.1",
+    "mocha": "^11.7.1",
+    "prettier": "^3.6.2",
+    "puppeteer": "^24.15.0"
+  }
 }
